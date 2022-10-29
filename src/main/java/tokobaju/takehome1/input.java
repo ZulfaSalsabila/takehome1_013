@@ -19,13 +19,13 @@ public class input {
         int totalbelanja = harga * jumlah;
         int diskon;
         
-        if(totalbelanja < 10000){
+        if(totalbelanja <= 10000){
             diskon = totalbelanja - (totalbelanja * 0/100);
         }
-        else if((totalbelanja > 10000) || (totalbelanja < 50000)){
+        else if((totalbelanja > 10000) && (totalbelanja <= 50000)){
             diskon = totalbelanja - (totalbelanja * 5/100);
         }
-        else if((totalbelanja > 50000) || (totalbelanja < 100000)){
+        else if((totalbelanja > 50000) && (totalbelanja <= 100000)){
             diskon = totalbelanja - (totalbelanja * 10/100);
         }
         else {
@@ -39,13 +39,13 @@ public class input {
         int totalbelanja = harga * jumlah;
         int diskon;
         
-        if(totalbelanja < 10000){
+        if(totalbelanja <= 10000){
             diskon = 0;
         }
-        else if((totalbelanja > 10000) || (totalbelanja < 50000)){
+        else if((totalbelanja > 10000) && (totalbelanja <= 50000)){
             diskon = 5;
         }
-        else if((totalbelanja > 50000) || (totalbelanja < 100000)){
+        else if((totalbelanja > 50000) && (totalbelanja <= 100000)){
             diskon = 10;
         }
         else {
